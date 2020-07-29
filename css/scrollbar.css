@@ -1,0 +1,34 @@
+/*
+
+	Stylesheet for scroll progress bar
+
+	author:     Ad Eggermont <adeggermont@gmail.com>
+
+*/
+
+.text {
+	margin: 0 auto;
+	padding: 50px 0;
+	width: 400px;
+	color: #404040;
+}
+
+
+.progress-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	z-index: 999;
+}
+
+	.filled {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		background: #71C7EC;
+		width: 0;
+		transition: all .3s ease-out;
+	}

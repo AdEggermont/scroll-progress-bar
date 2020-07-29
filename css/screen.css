@@ -1,0 +1,81 @@
+/*
+
+	General styles
+
+*/
+
+/*
+	Clearfix
+*/
+
+.clearfix:after,
+.container:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix,
+.container {
+	zoom: 1;
+}
+
+/*
+	General
+*/
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	*behavior: url(/js/boxsizing.htc); /* Absolute path to htc file */
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+/*
+	Page structure and layout
+*/
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.button a,
+.button a:visited {
+	cursor: pointer;
+	overflow: visible;
+	white-space: nowrap;
+	text-align: center;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	color: #FFF;
+	display: block;
+	outline: 0;
+	padding: 0 11px;
+	height: 27px;
+	line-height: 1;
+	color: #FFF;
+	font-size: 14px;
+	text-transform: uppercase;
+	background: #3a96d6;
+	border: 1px solid #205791;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	line-height: 25px;
+	float: left;
+	text-decoration: none;
+}
+
+.button a:hover,
+.button a:active,
+.button a:focus {
+	background: #205791;
+}
